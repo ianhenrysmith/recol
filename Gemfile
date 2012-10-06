@@ -11,7 +11,7 @@ end
 # Deploy with Capistrano
 # gem 'capistrano'
 
-gem 'ruby-debug19', :require => 'ruby-debug'
+gem "debugger"
 
 gem "devise"
 gem "haml", ">= 3.0.0"
