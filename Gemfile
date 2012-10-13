@@ -20,4 +20,7 @@ gem "jquery-rails"
 gem "bson_ext"
 gem "mongoid", ">= 2.0.0.beta.19"
 
+gem "delayed_job", "~> 3.0"
+gem "delayed_job_mongoid", "~> 2.0.0"
+
 gem 'watir'

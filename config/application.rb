@@ -62,6 +62,8 @@ module Recol
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
-    config.autoload_paths += ["#{config.root}/lib"]
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{Rails.root}/app/observers)
+    config.autoload_paths += Dir["#{Rails.root}/app/models/*"].find_all { |f| File.stat(f).directory? }
   end
 end
